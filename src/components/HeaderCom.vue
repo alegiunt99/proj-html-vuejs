@@ -90,9 +90,10 @@ header{
       row-gap: 8px;
       p{
         margin: 0;
+        font-size: 16px;
         }
       span{
-        font-size: 13px;
+        font-size: 12px;
         }
     }
 
@@ -101,7 +102,7 @@ header{
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      width: 34%;
+      width: 26%;
       img{
         width: 100%;
       }
