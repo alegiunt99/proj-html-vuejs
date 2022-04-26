@@ -31,8 +31,15 @@ export default {
 
 <style lang="scss">
 
-#app{
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 85%;
+  margin: 0 auto;
 }
 
 </style>

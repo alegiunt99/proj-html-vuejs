@@ -1,7 +1,7 @@
 [
 
     {
-        "iconClass": "fa-",
+        "iconClass": "leaf",
 
         "primaryText": "TREATMENTS",
 
@@ -10,7 +10,7 @@
     },
 
     {
-        "iconClass": "fa-",
+        "iconClass": "person",
 
         "primaryText": "ABOUT",
 
@@ -19,7 +19,7 @@
     },
 
     {
-        "iconClass": "fa-",
+        "iconClass": "heart",
 
         "primaryText": "JOURNAL",
 
@@ -28,7 +28,7 @@
     },
 
     {
-        "iconClass": "fa-",
+        "iconClass": "bookmark",
 
         "primaryText": "BOOK NOW",
 
