@@ -1,0 +1,41 @@
+[
+    {
+        "iconName": "hands-clapping",
+
+        "text" : "Messages",
+
+        "classType": "top"
+    },
+
+    {
+        "iconName": "smile",
+
+        "text" : "Therapy",
+
+        "classType": "bottom"
+    },
+
+    {
+        "iconName": "heart",
+
+        "text" : "Relaxing",
+
+        "classType": "top"
+    },
+
+    {
+        "iconName": "moon",
+
+        "text" : "Meditation",
+
+        "classType": "bottom"
+    },
+
+    {
+        "iconName": "snowflake",
+
+        "text" : "Natural Beauty",
+
+        "classType": "top"
+    }
+]
