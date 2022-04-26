@@ -7,11 +7,13 @@
 
       <button>acquista</button>
 
-      <div>
+      <div id="demos">
+        <i class="fa-solid fa-clipboard-question"></i>
         <span>demos</span>
       </div>
 
-      <div>
+      <div id="on-sale">
+        <span id="price-sale">$39</span>
         <span>on sale</span>
       </div>
     </div>
@@ -37,6 +39,40 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    #demos{
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      font-size: 12px;
+      background-color: gainsboro;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      i{
+        font-size: 22px;
+      }
+    }
+    #on-sale{
+      position: absolute;
+      right: 5px;
+      top: 69px;
+      font-size: 12px;
+      background-color: gainsboro;
+      color: black;
+      padding: 8px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #price-sale{
+        font-size: 20px;
+        font-weight: 600;
+        color: green;
+      }
+    }
   }
 }
 </style>
