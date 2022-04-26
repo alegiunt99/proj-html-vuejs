@@ -4,7 +4,7 @@
       <h2>Luxury SPA Experiences</h2>
       <i class="fa-solid fa-leaf"></i>
       <p>gray</p>
-      <div>___</div>
+      <div id="separe-bar"></div>
       <span>story</span>
       <button>click here</button>
       <div class="exp-buttons-list">
@@ -45,6 +45,10 @@ export default {
   justify-content: center;
   text-align: center;
   row-gap: 10px;
+  #separe-bar{
+    border: 1px solid rgb(151, 151, 151);
+    width: 100px;
+  }
   .exp-buttons-list{
     display: flex;
     column-gap: 91px;
