@@ -1,6 +1,6 @@
 <template>
   <main>
-      <h1>main</h1>
+    
       <!-- Jumbotron -->
       <JumbotronSection/>
       

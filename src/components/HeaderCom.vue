@@ -22,8 +22,8 @@
           <span></span>
         </div>
 
-        <div>
-          <h1>AVADA SPA</h1>
+        <div id="logo-box">
+          <img src="@/img/avada-spa-logo-retina-new-400x46.png" alt="LogoPrincipale">
         </div>
 
         <div class="header-link">
@@ -83,16 +83,27 @@ header{
     display: flex;
     justify-content: space-around;
     .header-link{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 8px;
-    p{
-      margin: 0;
-      }
-    span{
-      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 8px;
+      p{
+        margin: 0;
+        }
+      span{
+        font-size: 13px;
+        }
+    }
+
+    #logo-box{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 34%;
+      img{
+        width: 100%;
       }
     }
   }
