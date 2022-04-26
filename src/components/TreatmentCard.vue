@@ -1,7 +1,10 @@
 <template>
   <div class="card">
       <div v-for="item in cards" :key="item.image_path" class="content-card">
-            <img :src="require('@/img/layer-' + item.image_path + '-new.jpg')">
+            <div class="img-hover">
+                <p>{{item.title}}</p>
+            </div>
+            <img :src="require('@/img/layer-' + item.image_path + '-new.jpg')" class="image-default">
             <h3> {{item.title}} </h3>
             <div></div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam laborum tempore, illum maxime repellendus! Quia corporis amet vitae eos!</p>
@@ -41,5 +44,25 @@ export default {
                 width: 100%;
             }
         }
+    }
+
+    .img-hover{
+        width: 100%;
+        height: 100%;
+        display:none;
+    }
+
+    .content-card:hover{
+        .img-hover{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+            color: white;
+        }
+        .image-default{
+            display: none;
+        }
+
     }
 </style>
