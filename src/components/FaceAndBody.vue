@@ -11,9 +11,8 @@
                   <div>
                       <i :class="['fa-solid', `fa-${item.icon}`]"></i>
                       <span> {{item.text}} </span>
-                      <span v-if="index === 0"><strong>$62 For 2 Hours</strong> - Lorem ipsum salem irides</span>
                   </div>
-                  
+                  <span v-if="index === 0" class="price"><strong>$62 For 2 Hours</strong> - Lorem ipsum salem irides</span>
               </div>
           </div>
       </div>
@@ -56,6 +55,31 @@ export default {
     }
     .buy-form{
         width: 50%;
+        p{
+            margin: 32px auto;
+        }
+        .mini-boxes-choices{
+            border: 1px solid gray;
+            background-color: white;
+            padding: 18px;
+            margin-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            div{
+                display: flex;
+                align-items: center;
+                column-gap: 5px;
+                i{
+                    font-size: 10px;
+                    color: white;
+                    background-color: gray;
+                    padding: 4px;
+                }
+            }
+            .price{
+                padding-top: 19px;
+            }
+        }
     }
 }
 
