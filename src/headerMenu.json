@@ -1,0 +1,39 @@
+[
+
+    {
+        "iconClass": "fa-",
+
+        "primaryText": "TREATMENTS",
+
+        "subText": "Face & Body"
+
+    },
+
+    {
+        "iconClass": "fa-",
+
+        "primaryText": "ABOUT",
+
+        "subText": "Our Team"
+
+    },
+
+    {
+        "iconClass": "fa-",
+
+        "primaryText": "JOURNAL",
+
+        "subText": "Tips & Triks"
+
+    },
+
+    {
+        "iconClass": "fa-",
+
+        "primaryText": "BOOK NOW",
+
+        "subText": "Special offers"
+
+    }
+
+]
