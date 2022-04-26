@@ -43,7 +43,6 @@ export default {
       font-size: 25px;
     }
     h1{
-      font-size: 53px;
       margin: 10px 0px;
     }
     button{

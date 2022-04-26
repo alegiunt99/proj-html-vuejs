@@ -42,4 +42,12 @@ export default {
   margin: 0 auto;
 }
 
+h1{
+  font-size: 66px;
+}
+
+h2{
+  font-size: 53px;
+}
+
 </style>
