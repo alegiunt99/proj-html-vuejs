@@ -1,11 +1,11 @@
 <template>
   <section class="jumbotron">
     <div class="container">
-      <span>lorem</span>
+      <span id="sub-tit-jumbo">Give yourself permission</span>
 
-      <h1>jumbo</h1>
+      <h1>Relax, Revive and Rejuvenate</h1>
 
-      <button>acquista</button>
+      <button>EXPLORE TREATMENTS</button>
 
       <div id="demos">
         <i class="fa-solid fa-clipboard-question"></i>
@@ -39,6 +39,25 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    #sub-tit-jumbo{
+      font-size: 25px;
+    }
+    h1{
+      font-size: 53px;
+      margin: 10px 0px;
+    }
+    button{
+      font-size: 12px;
+      padding: 8px 20px;
+      border-radius: 15px;
+      border: none;
+      color: #4c4c4c;
+      &:hover{
+        color: white;
+        background-color: #6cd6e1;
+        cursor: pointer;
+      }
+    }
     #demos{
       position: absolute;
       right: 5px;
