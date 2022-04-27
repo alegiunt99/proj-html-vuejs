@@ -10,7 +10,7 @@
             
             <h3> {{item.title}} </h3>
 
-            <div></div>
+            <div class="separe-bar"></div>
 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam laborum tempore, illum maxime repellendus! Quia corporis amet vitae eos!</p>
       </div>
@@ -35,11 +35,27 @@ export default {
         flex-wrap: wrap;
         .content-card{
             width: 25%;
+            padding: 10px;
+            border: 2px solid gainsboro;
             .image-content{
                 width: 100%;
+                height: 71%;
                 img{
                     width: 100%;
                 }
+            }
+            h3{
+                padding-left: 10px;
+            }
+            .separe-bar{
+                border: 1px solid gainsboro;
+                width: 80%;
+                margin: 20px 0;
+                margin-left: 10px;
+            }
+            p{
+                padding-left: 10px;
+                font-size: 15px;
             }
             
         }
@@ -53,7 +69,7 @@ export default {
 
     .image-content:hover{
         .img-hover{
-            height: 71%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;

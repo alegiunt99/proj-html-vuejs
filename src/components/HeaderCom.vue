@@ -82,6 +82,7 @@ header{
   .row{
     display: flex;
     justify-content: space-around;
+    color:gray;
     .header-link{
       display: flex;
       flex-direction: column;

@@ -14,6 +14,7 @@
                   </div>
                   <span v-if="index === 0" class="price"><strong>$62 For 2 Hours</strong> - Lorem ipsum salem irides</span>
               </div>
+              <button>BOOK AN APPOINTMENT</button>
           </div>
       </div>
   </section>
@@ -78,6 +79,19 @@ export default {
             }
             .price{
                 padding-top: 19px;
+            }
+        }
+        button{
+            font-size: 12px;
+            padding: 8px 20px;
+            border-radius: 15px;
+            border: 1px solid #4c4c4c;
+            color: #4c4c4c;
+            margin-top: 70px;
+            &:hover{
+                color: white;
+                background-color: #6cd6e1;
+                cursor: pointer;
             }
         }
     }
