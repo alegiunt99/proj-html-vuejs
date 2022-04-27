@@ -88,6 +88,10 @@ header{
       align-items: center;
       justify-content: center;
       row-gap: 8px;
+      &:hover{
+        color: #5db2bb;
+        cursor: pointer;
+      }
       p{
         margin: 0;
         font-size: 16px;
