@@ -1,12 +1,17 @@
 <template>
   <div class="card">
       <div v-for="item in cards" :key="item.image_path" class="content-card">
-            <div class="img-hover">
-                <p>{{item.title}}</p>
+            <div class="image-content">
+                <div class="img-hover">
+                    <p>{{item.title}}</p>
+                </div>
+                <img :src="require('@/img/layer-' + item.image_path + '-new.jpg')" class="image-default">
             </div>
-            <img :src="require('@/img/layer-' + item.image_path + '-new.jpg')" class="image-default">
+            
             <h3> {{item.title}} </h3>
+
             <div></div>
+
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum aliquam laborum tempore, illum maxime repellendus! Quia corporis amet vitae eos!</p>
       </div>
       
@@ -20,16 +25,6 @@ export default {
   props:{
       cards: Array,
   },
-
-  methods: {
-      imgUrl(item){
-
-          const url = `@/img/layer-${item.image_path}-new.jpg`;
-
-          return url;
-
-      }
-  }
 }
 </script>
 
@@ -40,25 +35,31 @@ export default {
         flex-wrap: wrap;
         .content-card{
             width: 25%;
-            img{
+            .image-content{
                 width: 100%;
+                img{
+                    width: 100%;
+                }
             }
+            
         }
     }
 
     .img-hover{
         width: 100%;
-        height: 100%;
+        
         display:none;
     }
 
-    .content-card:hover{
+    .image-content:hover{
         .img-hover{
+            height: 71%;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: gray;
             color: white;
+            margin-bottom: 4px;
         }
         .image-default{
             display: none;
