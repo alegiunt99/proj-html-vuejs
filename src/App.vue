@@ -7,7 +7,7 @@
     <MainCom/>
 
     <!-- footer -->
-    <FooterCom/>
+    <FooterCom :links="footerLinks"/>
   </div>
 </template>
 
@@ -16,8 +16,16 @@ import HeaderCom from './components/HeaderCom.vue';
 import MainCom from './components/MainCom.vue';
 import FooterCom from './components/FooterCom.vue'
 
+import footerLinks from '@/footerLinks.json'
+
 export default {
   name: 'App',
+
+  data(){
+    return{
+      footerLinks,
+    }
+  },
   components: {
 
     HeaderCom,
