@@ -52,17 +52,12 @@
 </template>
 
 <script>
-import headerMenu from '@/headerMenu.json'
 
 export default {
   name: 'HeaderCom',
 
-  data(){
-    return {
-
-      menu: headerMenu,
-
-    }
+  props:{
+    menu: Array
   },
 
   methods: {
@@ -115,7 +110,9 @@ header{
   }
 }
 
-
+.fa-home{
+  color: #5db2bb;
+}
 
 .d-flex{
   display: flex;

@@ -22,16 +22,20 @@
 
 <script>
 
-import offersToBuy from '@/offersToBuy.json'
+//import offersToBuy from '@/offersToBuy.json'
 
 export default {
   name: 'FaceAndBody',
 
-  data(){
+  /*data(){
       return {
           offersBoxes: offersToBuy,
       }
-  },
+  },*/
+
+  props:{
+      offersBoxes: Array
+  }
 }
 </script>
 

@@ -1,10 +1,10 @@
 <template>
   <section>
     <!-- face & body treatment -->
-    <FaceAndBody/>
+    <FaceAndBody :offersBoxes="offersToBuy"/>
 
     <!-- our treatment -->
-    <OurTreatments />
+    <OurTreatments :cards="treatsCards"/>
 
   </section>
 </template>
@@ -16,6 +16,20 @@ import OurTreatments from '@/components/OurTreatments.vue';
 
 export default {
   name: 'TreatmentsSection',
+
+  data(){
+    return {
+      treatsCards: this.cards,
+
+      offersToBuy: this.offersBoxes
+    }
+  },
+
+  props:{
+    cards: Array,
+
+    offersBoxes: Array
+  },
 
   components:{
 

@@ -5,7 +5,7 @@
     </div>
 
     <div>
-      <TreatmentCard :cards="cards"/>
+      <TreatmentCard :cards="treatCards"/>
     </div>
   </section>
 </template>
@@ -13,15 +13,21 @@
 <script>7
 import TreatmentCard from '@/components/TreatmentCard.vue'
 
-import treatsCards from '@/treatsCards.json'
+//import treatsCards from '@/treatsCards.json'
 
 export default {
   name: 'OurTreatments',
 
   data(){
-    return {
-      cards: treatsCards,
+    return{
+      treatCards: this.cards,
     }
+  },
+
+  props:{
+
+    cards: Array,
+
   },
 
   components: {

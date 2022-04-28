@@ -32,16 +32,12 @@
 
 <script>
 
-import experiencesButton from '@/experiencesButtons.json';
-
 export default {
   name: 'ExperiencesSection',
-  
-  data(){
-    return {
-      exButtons: experiencesButton,
-    }
-  },
+
+  props:{
+    exButtons: Array
+  }
 }
 </script>
 

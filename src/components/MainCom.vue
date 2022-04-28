@@ -5,10 +5,10 @@
       <JumbotronSection/>
       
       <!-- sezione delle esperienze -->
-      <ExperiencesSection/>
+      <ExperiencesSection :exButtons="exercButtons"/>
       
       <!-- sezione dei trattamenti -->
-      <TreatmentsSection/>
+      <TreatmentsSection :cards="adCards" :offersBoxes="offersBox"/>
       
       <!-- sezione della citazione -->
       <CitSection/>
@@ -29,6 +29,24 @@ import OfferSection from '@/components/OfferSection.vue';
 
 export default {
   name: 'MainCom',
+
+  data(){
+    return{
+      exercButtons: this.exButtons,
+
+      adCards: this.cards,
+
+      offersBox: this.offersBoxes
+    }
+  },
+
+  props:{
+    exButtons: Array,
+
+    cards: Array,
+
+    offersBoxes: Array
+  },
 
   components:{
 
