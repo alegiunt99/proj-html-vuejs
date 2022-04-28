@@ -38,5 +38,12 @@ export default {
 
 
 <style scoped lang="scss">
+#title{
 
+  text-align: center;
+  padding: 30px 0px;
+  color: white;  
+  background-color: #383838;
+
+}
 </style>

@@ -49,16 +49,20 @@ export default {
             }
             h3{
                 padding-left: 10px;
+                padding-top: 10px;
+                color: #bcafa1;
             }
             .separe-bar{
-                border: 1px solid gainsboro;
+                border: 1px solid #bcafa1;
                 width: 80%;
                 margin: 20px 0;
                 margin-left: 10px;
             }
             p{
                 padding-left: 10px;
+                padding-bottom: 10px;
                 font-size: 15px;
+                color: gray;
             }
             
         }

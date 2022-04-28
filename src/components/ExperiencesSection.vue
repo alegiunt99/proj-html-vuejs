@@ -52,6 +52,9 @@ export default {
   text-align: center;
   row-gap: 10px;
   padding: 0 160px;
+  h2{
+    color: #6c6c6c;
+  }
   #separe-bar{
     border: 1px solid rgb(151, 151, 151);
     width: 100px;

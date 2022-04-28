@@ -85,7 +85,7 @@ header{
       justify-content: center;
       row-gap: 8px;
       &:hover{
-        color: #5db2bb;
+        color: #6cd6e1;
         cursor: pointer;
       }
       p{
@@ -111,7 +111,7 @@ header{
 }
 
 .fa-home{
-  color: #5db2bb;
+  color: #6cd6e1;
 }
 
 .d-flex{
