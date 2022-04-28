@@ -2,8 +2,12 @@
   <div class="card">
       <div v-for="item in cards" :key="item.image_path" class="content-card">
             <div class="image-content">
-                <div class="img-hover">
-                    <p>{{item.title}}</p>
+                <div class="card-hover">
+                    
+                    <img src="@/img/hover-img.png" alt="" class="img-hover">
+
+                    <p class="text-hover">{{item.title}}</p>
+
                 </div>
                 <img :src="require('@/img/layer-' + item.image_path + '-new.jpg')" class="image-default">
             </div>
@@ -39,7 +43,6 @@ export default {
             border: 2px solid gainsboro;
             .image-content{
                 width: 100%;
-                height: 71%;
                 img{
                     width: 100%;
                 }
@@ -61,21 +64,21 @@ export default {
         }
     }
 
-    .img-hover{
-        width: 100%;
-        
-        display:none;
+    .card-hover{
+        display: none;
     }
 
     .image-content:hover{
-        .img-hover{
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: gray;
-            color: white;
-            margin-bottom: 4px;
+        .card-hover{
+            display: block;
+            position: relative;
+            .text-hover{
+                color: white;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
         .image-default{
             display: none;
